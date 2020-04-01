@@ -37,6 +37,7 @@ curl -o /usr/local/sbin/apt-get https://raw.githubusercontent.com/DFAU/hetzner-c
 
 chmod +x /usr/local/sbin/apt-get
 
+apt-get update
 apt-get install -y jq ufw fail2ban
 
 curl -o /usr/local/bin/update-config.sh https://raw.githubusercontent.com/DFAU/hetzner-cloud-init/master/update-config.sh
