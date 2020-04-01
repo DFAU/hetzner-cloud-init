@@ -33,13 +33,13 @@ sed -i 's/[#]*PasswordAuthentication yes/PasswordAuthentication no/g' /etc/ssh/s
 
 systemctl restart sshd
 
-curl -o /usr/local/sbin/apt-get https://raw.githubusercontent.com/vitobotta/hetzner-cloud-init/master/apt-get
+curl -o /usr/local/sbin/apt-get https://raw.githubusercontent.com/DFAU/hetzner-cloud-init/master/apt-get
 
 chmod +x /usr/local/sbin/apt-get
 
 apt-get install -y jq ufw fail2ban
 
-curl -o /usr/local/bin/update-config.sh https://raw.githubusercontent.com/vitobotta/hetzner-cloud-init/master/update-config.sh
+curl -o /usr/local/bin/update-config.sh https://raw.githubusercontent.com/DFAU/hetzner-cloud-init/master/update-config.sh
 
 chmod +x /usr/local/bin/update-config.sh
 
